@@ -84,7 +84,7 @@ export function Header({
         <div
           className={`absolute inset-0 transition-all duration-500 ${theme === 'dark' ? '' : ''}`}
         />
-        <div className="absolute inset-0 backdrop-blur-sm bg-gray-100 dark:bg-gray-900" />
+        <div className="absolute inset-0 backdrop-blur-sm bg-gray-100 dark:bg-gray-950" />
         <div
           className={`absolute bottom-0 w-full h-px transition-all duration-500 ${
             theme === 'dark'
@@ -103,7 +103,7 @@ export function Header({
                 onClick={toggleTheme}
                 className={`h-10 w-10 transition-all duration-300 backdrop-blur-sm border rounded-full hover:shadow-xl hover:scale-105 group ${
                   theme === 'dark'
-                    ? 'bg-gradient-to-r from-gray-950/20 to-gray-950/20 hover:from-green-400/30 hover:to-green-500/30 text-white border-green-50/50 hover:border-emerald-300/40'
+                    ? 'bg-gradient-to-r from-gray-950/20 to-gray-950/100 hover:from-green-400/30 hover:to-green-500/30 text-white border-green-50/50 hover:border-emerald-300/40'
                     : 'bg-gradient-to-r from-emerald-700 to-green-500 hover:from-green-400 hover:to-green-500 text-gray-100 border-green-400 hover:border-emerald-300'
                 }`}
                 aria-label="تغيير المظهر"

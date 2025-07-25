@@ -22,7 +22,7 @@ const InputArea = forwardRef<HTMLTextAreaElement, InputAreaProps>(
         <Textarea
           ref={ref}
           placeholder={placeholder}
-          className="w-full resize-none px-8 py-8 rounded-full min-h-[80px] max-h-[100px] overflow-y-auto border bg-gray-100 dark:bg-gray-950 dark:text-white text-gray-800 border-green-600 dark:border-green-500 focus:ring-0 focus:ring-green-500 focus:border-green-500 transition-all duration-200 [&::-webkit-scrollbar]:hidden"
+          className="w-full resize-none px-8 py-8 rounded-full min-h-[80px] max-h-[100px] overflow-y-auto border bg-gradient-to-br from-gray-200 via-gray-100 to-gray-100 dark:from-gray-900 dark:via-gray-900 dark:to-gray-950 dark:text-white text-gray-800 border-green-500/80 dark:border-green-500/40 focus:ring-0 focus:ring-green-500 focus:border-green-500 transition-all duration-200 [&::-webkit-scrollbar]:hidden"
           value={inputMessage}
           onChange={(e) => setInputMessage(e.target.value)}
           onKeyDown={onKeyPress}

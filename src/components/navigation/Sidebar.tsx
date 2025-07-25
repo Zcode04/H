@@ -180,10 +180,10 @@ export function Sidebar({
 
 
             )}
-            aria-label="مردّ جديدّ"
+            aria-label="مردّه جديدّ"
           >
             <SquarePen className="h-5 w-5  text-gray-900  dark:text-green-400" />
-                          <span className="font-medium font-cairo text-gray-900 dark:text-green-50 p-2  ">مردّ جديدّ</span>
+                          <span className="font-medium font-cairo text-gray-900 dark:text-green-50 p-2  ">مردّه جديدّ</span>
           </Button>
         </div>
 

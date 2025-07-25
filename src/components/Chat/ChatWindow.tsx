@@ -40,7 +40,7 @@ export default function ChatWindow({ messages, isLoading, onSuggestionClick }: C
     <div className="flex-1 overflow-y-auto relative [&::-webkit-scrollbar]:hidden">
       {/* خلفية ثابتة */}
       <div className="fixed inset-0 pointer-events-none z-0">
-        <div className="absolute inset-0 bg-gray-100 dark:bg-gray-900" />
+        <div className="absolute inset-0 bg-gray-100 dark:bg-gray-950" />
       </div>
 
       <div className="relative z-10 p-4 sm:p-6">

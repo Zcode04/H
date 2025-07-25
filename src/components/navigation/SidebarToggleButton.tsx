@@ -19,18 +19,18 @@ export function SidebarToggleButton({ toggleSidebar }: SidebarToggleButtonProps)
 
   const classes =
     currentTheme === 'dark'
-      ? 'bg-gradient-to-r from-green-500 to-green-500 hover:from-emerald-500/30 hover:to-green-400/30 text-white border-green-50/50 hover:border-green-400/40'
-      : 'bg-gradient-to-r from-green-500 to-emerald-700 hover:from-green-300 hover:to-green-500 text-gray-100 border-green-500 hover:border-green-300';
+      ? 'h-6 w-12 rounded-full  border-green-400 bg-gradient-to-b from-green-600 to-green-700 dark:from-gray-900 dark:to-gray-950 dark:text-green-400 dark:border-green-400/40 hover:bg-blue-100 dark:hover:bg-blue-900/3 transition-colors duration-200 shadow-sm'
+      : 'h-6 w-12 rounded-full  border-green-400 bg-gradient-to-b from-green-600 to-green-700 dark:from-gray-900 dark:to-gray-950 dark:text-green-400 dark:border-green-400/40 hover:bg-blue-100 dark:hover:bg-blue-900/3 transition-colors duration-200 shadow-sm';
 
   return (
     <Button
       variant="ghost"
       size="icon"
       onClick={toggleSidebar}
-      className={`h-10 w-10 transition-all duration-300 backdrop-blur-sm z-50 border rounded-full shadow-lg hover:shadow-xl hover:scale-105 ${classes}`}
+      className={`h-6 w-12  backdrop-blur-sm z-50 border rounded-full shadow-lg hover:shadow-xl hover:scale-105 ${classes}`}
       aria-label="تبديل الشريط الجانبي"
     >
-      <ChevronLeft className="h-5 w-5 dark:text-green-50 z-50" />
+      <ChevronLeft className="h-5 w-5 text-green-200 hover:rotate-180 transition-transform duration-400 z-50" />
     </Button>
   );
 }
