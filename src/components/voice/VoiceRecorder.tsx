@@ -196,21 +196,21 @@ export default function VoiceRecorder() {
 
       {/* بعد الإرسال */}
       {sent && audioURL && (
-        <div className="bg-green-100 text-green-800 rounded-2xl rounded-bl-none px-4 py-2 self-end shadow">
+        <div className=" text-green-200 border-green-400 bg-gradient-to-b from-green-600 to-green-700 dark:from-gray-900 dark:to-gray-950 dark:text-green-400 dark:border-green-400/40 hover:bg-blue-100 dark:hover:bg-blue-900/30  rounded-2xl rounded-bl-none px-4 py-2 self-end shadow">
           <div className="flex items-center gap-2">
-            <button onClick={togglePreview} className="text-green-700">
+            <button onClick={togglePreview} className="text-green-50 dark:text-green-500">
               {isPlayingPreview ? <Pause size={20} /> : <Play size={20} />}
             </button>
             <div className="flex gap-1 items-end">
               {baseHeights.slice(0, 25).map((h, i) => (
                 <div
                   key={`sent-${i}`}
-                  className="w-1 bg-green-600 rounded-full"
+                  className="w-1 bg-gray-50 dark:bg-green-500 rounded-full"
                   style={{ height: `${h}px` }}
                 />
               ))}
             </div>
-            <span className="text-xs text-green-800">{fmt(duration)}</span>
+            <span className="text-xs text-green-50 dark:text-green-500">{fmt(duration)}</span>
           </div>
         </div>
       )}
