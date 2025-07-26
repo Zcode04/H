@@ -95,25 +95,6 @@ const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     }
   };
 
-  const handleMediaSelect = (mediaType: string) => {
-    // Handle media selection
-    switch (mediaType) {
-      case 'image':
-        console.log('Image selected');
-        break;
-      case 'video':
-        console.log('Video selected');
-        break;
-      case 'document':
-        console.log('Document selected');
-        break;
-      case 'audio':
-        console.log('Audio selected');
-        break;
-      default:
-        break;
-    }
-  };
 
   return (
     <div className="h-screen flex flex-col">
@@ -145,7 +126,7 @@ const [isSidebarOpen, setIsSidebarOpen] = useState(false);
             isLoading={isLoading}
             toggleSidebar={toggleSidebar}
             onActionClick={handleActionClick}
-            onMediaSelect={handleMediaSelect}
+       
           />
         </main>
       </div>
